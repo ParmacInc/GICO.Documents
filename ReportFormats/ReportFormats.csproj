@@ -58,9 +58,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="France\Bill Of Laginds\Prueba.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="France\BillOfLadings\BillOfLadingPrint.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>BillOfLadingPrint.cs</LastGenOutput>
