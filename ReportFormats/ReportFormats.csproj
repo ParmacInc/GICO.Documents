@@ -50,6 +50,9 @@
       <DependentUpon>BillOfLadingPrint.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="France\BillOfLadings\DS_FR_FEPY_BILLOFLADING.cs">
+      <DependentUpon>DS_FR_FEPY_BILLOFLADING.xsd</DependentUpon>
+    </Compile>
     <Compile Include="France\BillOfLadings\DS_FR_FEPY_BILLOFLADING.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
