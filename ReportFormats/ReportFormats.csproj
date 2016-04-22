@@ -82,6 +82,24 @@
       <DependentUpon>FMOT_ResellerBillOfLading.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="France\BillOfLadings\nestlebilloflading.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>nestlebilloflading.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="France\BillOfLadings\SKF_BillOfLading.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SKF_BillOfLading.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="France\BillOfLadings\SKF_BillOfLading_GER.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SKF_BillOfLading_GER.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -104,6 +122,18 @@
     <EmbeddedResource Include="France\BillOfLadings\FMOT_ResellerBillOfLading.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>FMOT_ResellerBillOfLading.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="France\BillOfLadings\nestlebilloflading.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>nestlebilloflading.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="France\BillOfLadings\SKF_BillOfLading.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SKF_BillOfLading.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="France\BillOfLadings\SKF_BillOfLading_GER.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SKF_BillOfLading_GER.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
