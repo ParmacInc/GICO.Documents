@@ -64,6 +64,24 @@
       <DependentUpon>FCHA_BillOfLadingPrint.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="France\BillOfLadings\FCOM_BillOfLadingPrint.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FCOM_BillOfLadingPrint.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="France\BillOfLadings\FMOT_BillOfLading.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FMOT_BillOfLading.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="France\BillOfLadings\FMOT_ResellerBillOfLading.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FMOT_ResellerBillOfLading.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -74,6 +92,18 @@
     <EmbeddedResource Include="France\BillOfLadings\FCHA_BillOfLadingPrint.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>FCHA_BillOfLadingPrint.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="France\BillOfLadings\FCOM_BillOfLadingPrint.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FCOM_BillOfLadingPrint.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="France\BillOfLadings\FMOT_BillOfLading.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FMOT_BillOfLading.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="France\BillOfLadings\FMOT_ResellerBillOfLading.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FMOT_ResellerBillOfLading.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
