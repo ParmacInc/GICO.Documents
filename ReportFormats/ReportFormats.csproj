@@ -58,12 +58,22 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DS_FR_FEPY_BILLOFLADING.xsd</DependentUpon>
     </Compile>
+    <Compile Include="France\BillOfLadings\FCHA_BillOfLadingPrint.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FCHA_BillOfLadingPrint.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="France\BillOfLadings\BillOfLadingPrint.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>BillOfLadingPrint.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="France\BillOfLadings\FCHA_BillOfLadingPrint.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FCHA_BillOfLadingPrint.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
