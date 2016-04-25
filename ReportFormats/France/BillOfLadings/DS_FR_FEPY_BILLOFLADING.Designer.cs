@@ -525,6 +525,8 @@ namespace ReportFormats.France.BillOfLadings {
             
             private global::System.Data.DataColumn columnLongitude_flt;
             
+            private global::System.Data.DataColumn columnGLN_str;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public TableDataTable() {
@@ -1040,6 +1042,14 @@ namespace ReportFormats.France.BillOfLadings {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn GLN_strColumn {
+                get {
+                    return this.columnGLN_str;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -1135,7 +1145,8 @@ namespace ReportFormats.France.BillOfLadings {
                         double NetWeight_flt, 
                         string Country_str, 
                         double Latitude_flt, 
-                        string Longitude_flt) {
+                        string Longitude_flt, 
+                        string GLN_str) {
                 TableRow rowTableRow = ((TableRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         kPTD,
@@ -1197,7 +1208,8 @@ namespace ReportFormats.France.BillOfLadings {
                         NetWeight_flt,
                         Country_str,
                         Latitude_flt,
-                        Longitude_flt};
+                        Longitude_flt,
+                        GLN_str};
                 if ((parentTable3RowBytblPickTicketHeaders_tblPickTicketDetails != null)) {
                     columnValuesArray[1] = parentTable3RowBytblPickTicketHeaders_tblPickTicketDetails[0];
                 }
@@ -1283,6 +1295,7 @@ namespace ReportFormats.France.BillOfLadings {
                 this.columnCountry_str = base.Columns["Country_str"];
                 this.columnLatitude_flt = base.Columns["Latitude_flt"];
                 this.columnLongitude_flt = base.Columns["Longitude_flt"];
+                this.columnGLN_str = base.Columns["GLN_str"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1408,6 +1421,8 @@ namespace ReportFormats.France.BillOfLadings {
                 base.Columns.Add(this.columnLatitude_flt);
                 this.columnLongitude_flt = new global::System.Data.DataColumn("Longitude_flt", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnLongitude_flt);
+                this.columnGLN_str = new global::System.Data.DataColumn("GLN_str", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGLN_str);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("tblPickTicketDetailsKey1", new global::System.Data.DataColumn[] {
                                 this.columnkPTD}, false));
                 this.columnkPTD.Unique = true;
@@ -1883,6 +1898,8 @@ namespace ReportFormats.France.BillOfLadings {
             
             private global::System.Data.DataColumn columnWorkOrder_str;
             
+            private global::System.Data.DataColumn columnPalletNumber_str;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public Table1DataTable() {
@@ -1966,6 +1983,14 @@ namespace ReportFormats.France.BillOfLadings {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PalletNumber_strColumn {
+                get {
+                    return this.columnPalletNumber_str;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -2001,7 +2026,7 @@ namespace ReportFormats.France.BillOfLadings {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public Table1Row AddTable1Row(System.Guid kPickTicketHeader, TableRow parentTableRowBytblPickTicketDetails_tblGroupByQty, int QtyPallets_int, int Quantity_int, string Batch_int, string WorkOrder_str) {
+            public Table1Row AddTable1Row(System.Guid kPickTicketHeader, TableRow parentTableRowBytblPickTicketDetails_tblGroupByQty, int QtyPallets_int, int Quantity_int, string Batch_int, string WorkOrder_str, string PalletNumber_str) {
                 Table1Row rowTable1Row = ((Table1Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         kPickTicketHeader,
@@ -2009,7 +2034,8 @@ namespace ReportFormats.France.BillOfLadings {
                         QtyPallets_int,
                         Quantity_int,
                         Batch_int,
-                        WorkOrder_str};
+                        WorkOrder_str,
+                        PalletNumber_str};
                 if ((parentTableRowBytblPickTicketDetails_tblGroupByQty != null)) {
                     columnValuesArray[1] = parentTableRowBytblPickTicketDetails_tblGroupByQty[0];
                 }
@@ -2041,6 +2067,7 @@ namespace ReportFormats.France.BillOfLadings {
                 this.columnQuantity_int = base.Columns["Quantity_int"];
                 this.columnBatch_int = base.Columns["Batch_int"];
                 this.columnWorkOrder_str = base.Columns["WorkOrder_str"];
+                this.columnPalletNumber_str = base.Columns["PalletNumber_str"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2058,6 +2085,8 @@ namespace ReportFormats.France.BillOfLadings {
                 base.Columns.Add(this.columnBatch_int);
                 this.columnWorkOrder_str = new global::System.Data.DataColumn("WorkOrder_str", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnWorkOrder_str);
+                this.columnPalletNumber_str = new global::System.Data.DataColumn("PalletNumber_str", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPalletNumber_str);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3801,6 +3830,22 @@ namespace ReportFormats.France.BillOfLadings {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string GLN_str {
+                get {
+                    try {
+                        return ((string)(this[this.tableTable.GLN_strColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'GLN_str\' in table \'Table\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTable.GLN_strColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public Table3Row Table3Row {
                 get {
                     return ((Table3Row)(this.GetParentRow(this.Table.ParentRelations["tblPickTicketHeaders_tblPickTicketDetails"])));
@@ -4532,6 +4577,18 @@ namespace ReportFormats.France.BillOfLadings {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsGLN_strNull() {
+                return this.IsNull(this.tableTable.GLN_strColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetGLN_strNull() {
+                this[this.tableTable.GLN_strColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public Table1Row[] GetTable1Rows() {
                 if ((this.Table.ChildRelations["tblPickTicketDetails_tblGroupByQty"] == null)) {
                     return new Table1Row[0];
@@ -4859,6 +4916,22 @@ namespace ReportFormats.France.BillOfLadings {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string PalletNumber_str {
+                get {
+                    try {
+                        return ((string)(this[this.tableTable1.PalletNumber_strColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PalletNumber_str\' in table \'Table1\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTable1.PalletNumber_strColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public TableRow TableRow {
                 get {
                     return ((TableRow)(this.GetParentRow(this.Table.ParentRelations["tblPickTicketDetails_tblGroupByQty"])));
@@ -4938,6 +5011,18 @@ namespace ReportFormats.France.BillOfLadings {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetWorkOrder_strNull() {
                 this[this.tableTable1.WorkOrder_strColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsPalletNumber_strNull() {
+                return this.IsNull(this.tableTable1.PalletNumber_strColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetPalletNumber_strNull() {
+                this[this.tableTable1.PalletNumber_strColumn] = global::System.Convert.DBNull;
             }
         }
         

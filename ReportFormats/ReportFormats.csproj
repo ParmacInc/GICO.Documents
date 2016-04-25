@@ -106,6 +106,12 @@
       <DependentUpon>SKF_BillOfLading_GER.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="France\BillOfLadings\SKF_BillOfLading_PSA.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SKF_BillOfLading_PSA.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -144,6 +150,10 @@
     <EmbeddedResource Include="France\BillOfLadings\SKF_BillOfLading_GER.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>SKF_BillOfLading_GER.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="France\BillOfLadings\SKF_BillOfLading_PSA.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SKF_BillOfLading_PSA.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
